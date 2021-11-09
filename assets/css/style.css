@@ -174,6 +174,38 @@ main { width: 100%; }
 }
 /* title styling ends here */
 
+/* faces styling ends here */
+.faces {
+  width: 100%;
+  height: 100%;
+}
+
+.faces figure {
+  height: auto;
+  position: absolute;
+  right: 0;
+  bottom: 14%;
+  transform: translateX(100%);
+}
+
+.mid-img-one {
+  width: 65%;
+  animation: firstMotion .5s 2s ease-in forwards, backTwo .5s 5.5s ease-in-out forwards;
+}
+
+.mid-img-two {
+  width: 65%;
+  z-index: 10;
+  animation: firstMotion .5s 10s ease-in forwards, backTwo .5s 13s ease-in-out forwards;
+}
+
+.mid-img-three {
+  width: 65%;
+  z-index: 10;
+  animation: firstMotion .5s 14.5s ease-in forwards, backTwo .5s 18s ease-in-out forwards;
+}
+/* faces styling ends here */
+
 /*=================================
   main styling ends here
 =================================*/
