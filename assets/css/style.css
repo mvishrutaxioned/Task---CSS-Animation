@@ -126,6 +126,12 @@ main { width: 100%; }
   overflow: hidden;
   z-index: -20;
 }
+
+.logo {
+  width: 30%;
+  margin: 20px auto;
+}
+
 /*=================================
   main styling ends here
 =================================*/
