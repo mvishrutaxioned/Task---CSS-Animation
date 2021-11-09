@@ -300,6 +300,33 @@ main { width: 100%; }
 }
 /* link styling ends here */
 
+/* funfood hat styling starts here */
+.funfood-hat { width: 40%; }
+
+.hat {
+  width: 40%;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  bottom: 40%;
+  left: 10%;
+  z-index: 30;
+  transform: rotate(-5deg) translateX(-200%);
+  animation: firstMotion .5s 19.5s ease-in-out forwards, hatDown 2s 20s ease-in-out forwards;
+}
+
+.funfood {
+  width: 35%;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  bottom: 4%;
+  left: 0;
+  transform: translateX(200%);
+  animation: firstMotion .5s 18.5s ease-in forwards;
+}
+/* funfood hat styling ends here */
+
 /*=================================
   main styling ends here
 =================================*/
