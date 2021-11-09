@@ -206,6 +206,77 @@ main { width: 100%; }
 }
 /* faces styling ends here */
 
+/* table styling starts here */
+.table {
+  width: 100%;
+  min-height: 15%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url('../images/table.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -10;
+}
+
+.plate {
+  width: 80%;
+  margin: 10px 0;
+  position: absolute;
+  transform: translateX(-100%);
+  animation: firstMotion .1s 1.5s ease-in forwards, backOne .1s 5s ease-in-out forwards;
+}
+
+.sandwich {
+  transform: translateX(-100%);
+  animation: firstMotion .5s 6s ease-in forwards, backOne .5s 18s ease-in-out forwards;
+}
+
+.sandwich figure { position: absolute; }
+
+.bottom-bread {
+  width: 70%;
+  position: absolute;
+  z-index: 10;
+}
+
+.veggies {
+  width: 50%;
+  top: 25%;
+  left: 10%;
+  z-index: 20;
+}
+
+.mayo {
+  width: 50%;
+  top: 10%;
+  left: 10%;
+  z-index: 30;
+  opacity: 0;
+  animation: mayo 1s 9s ease-in-out forwards;
+}
+
+.knife {
+  width: 30%;
+  top: -20px;
+  bottom: 50px;
+  left: 5%;
+  z-index: 40;
+  opacity: 0;
+  transform: rotate(-60deg);
+  animation: knifeIn 1s 8.5s ease-in-out forwards, knifeOut .1s 9.5s ease-in-out forwards;
+}
+
+.top-bread {
+  width: 45%;
+  position: absolute;
+  top: -15px;
+  left: 13%;
+  animation: topBreadUp .5s 8s ease-in-out forwards, topBreadDown .5s 9.5s ease-in-out forwards;
+  z-index: 50;
+}
+/* table styling ends here */
+
 /*=================================
   main styling ends here
 =================================*/
