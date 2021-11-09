@@ -327,6 +327,58 @@ main { width: 100%; }
 }
 /* funfood hat styling ends here */
 
+/* keyframe animation starts here */
+@keyframes firstMotion {
+  to { transform: translateX(0%); }
+}
+
+@keyframes backOne {
+  to { transform:  translateX(-200%); }
+}
+
+@keyframes backTwo {
+  to { transform:  translateX(100%); }
+}
+
+@keyframes knifeIn {
+  to {
+    left: 40%;
+    opacity: 1;
+  }
+}
+
+@keyframes knifeOut {
+  to { opacity: 0; }
+}
+
+@keyframes topBreadUp {
+  to { top: -50px; }
+}
+
+@keyframes topBreadDown {
+  to { top: 0; }
+}
+
+@keyframes mayo {
+  to { opacity: 1; }
+}
+
+@keyframes topBreadDown {
+  to { top: -15px; }
+}
+
+@keyframes hatDown {
+  to {
+    bottom: 28%;
+    transform: rotate(-5deg) translateX(0%);
+  }
+}
+
+@keyframes link {
+  to { transform: translate(0%, 0%); }
+}
+/* keyframe styling ends here */
+
 /*=================================
   main styling ends here
 =================================*/
