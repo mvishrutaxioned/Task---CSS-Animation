@@ -105,55 +105,284 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1350px;
-  width: 86%; 
-  margin: 0 auto;
 }
-/*=================================
-  Header styling starts here
-=================================*/
-
-
-
-
-
-
-/*=================================
-  Header styling ends here
-=================================*/  
-
 /*=================================
   main styling starts here
 =================================*/
 
+main { width: 100%; }
 
+.wrapper {
+  width: 25%;
+  height: 95vh;
+  margin: 15px auto;
+  border: 1px solid #808080;
+  position: relative;
+  background: url('../images/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  overflow: hidden;
+  z-index: -20;
+}
 
+.logo {
+  width: 30%;
+  margin: 20px auto;
+}
 
+/* title styling starts here */
+.titles {
+  margin: 10% auto;
+  position: relative;
+}
 
+.title-one, .title-two, .title-three, .title-four {
+  width: 50%;
+  margin: 0 auto;
+  position: absolute;
+  color: #ED1C24;
+  font-size: 32px;
+  transform: translateX(-200%);
+}
 
+.title-one {
+  right: 0%;
+  left: 0%;
+  animation: firstMotion .5s 2s ease-in-out forwards, backOne .5s 5.5s ease-in-out forwards;
+}
 
+.title-two {
+  right: 0%;
+  left: 0%;
+  animation: firstMotion .5s 10s ease-in-out forwards, backOne .5s 13s ease-in-out forwards;
+}
 
+.title-three {
+  width: 50%;
+  right: 0%;
+  left: 0%;
+  animation: firstMotion .5s 14.5s ease-in-out forwards, backOne .5s 18s ease-in-out forwards;
+}
+
+.title-four {
+  width: 60%;
+  right: 0%;
+  left: 0%;
+  animation: firstMotion .5s 18.5s ease-in-out forwards;
+}
+/* title styling ends here */
+
+/* faces styling ends here */
+.faces {
+  width: 100%;
+  height: 100%;
+}
+
+.faces figure {
+  height: auto;
+  position: absolute;
+  right: 0;
+  bottom: 14%;
+  transform: translateX(100%);
+}
+
+.mid-img-one {
+  width: 65%;
+  animation: firstMotion .5s 2s ease-in forwards, backTwo .5s 5.5s ease-in-out forwards;
+}
+
+.mid-img-two {
+  width: 65%;
+  z-index: 10;
+  animation: firstMotion .5s 10s ease-in forwards, backTwo .5s 13s ease-in-out forwards;
+}
+
+.mid-img-three {
+  width: 65%;
+  z-index: 10;
+  animation: firstMotion .5s 14.5s ease-in forwards, backTwo .5s 18s ease-in-out forwards;
+}
+/* faces styling ends here */
+
+/* table styling starts here */
+.table {
+  width: 100%;
+  min-height: 15%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url('../images/table.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -10;
+}
+
+.plate {
+  width: 80%;
+  margin: 10px 0;
+  position: absolute;
+  transform: translateX(-100%);
+  animation: firstMotion .1s 1.5s ease-in forwards, backOne .1s 5s ease-in-out forwards;
+}
+
+.sandwich {
+  transform: translateX(-100%);
+  animation: firstMotion .5s 6s ease-in forwards, backOne .5s 18s ease-in-out forwards;
+}
+
+.sandwich figure { position: absolute; }
+
+.bottom-bread {
+  width: 70%;
+  position: absolute;
+  z-index: 10;
+}
+
+.veggies {
+  width: 50%;
+  top: 25%;
+  left: 10%;
+  z-index: 20;
+}
+
+.mayo {
+  width: 50%;
+  top: 10%;
+  left: 10%;
+  z-index: 30;
+  opacity: 0;
+  animation: mayo 1s 9s ease-in-out forwards;
+}
+
+.knife {
+  width: 30%;
+  top: -20px;
+  bottom: 50px;
+  left: 5%;
+  z-index: 40;
+  opacity: 0;
+  transform: rotate(-60deg);
+  animation: knifeIn 1s 8.5s ease-in-out forwards, knifeOut .1s 9.5s ease-in-out forwards;
+}
+
+.top-bread {
+  width: 45%;
+  position: absolute;
+  top: -15px;
+  left: 13%;
+  animation: topBreadUp .5s 8s ease-in-out forwards, topBreadDown .5s 9.5s ease-in-out forwards;
+  z-index: 50;
+}
+/* table styling ends here */
+
+/* link styling starts here */
+
+.recipe-btn {
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  right: 30%;
+  padding: 10px 18px;
+  border-radius: 5px;
+  background: #492CAD;
+  color: #fff;
+  z-index: 50;
+  transform: translate(-200%, -300%);
+  animation: link 1s 21.5s ease-in-out forwards;
+}
+
+.recipe-btn:hover {
+  background: #6F52D4;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+/* link styling ends here */
+
+/* funfood hat styling starts here */
+.funfood-hat { width: 40%; }
+
+.hat {
+  width: 40%;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  bottom: 40%;
+  left: 10%;
+  z-index: 30;
+  transform: rotate(-5deg) translateX(-200%);
+  animation: firstMotion .5s 19.5s ease-in-out forwards, hatDown 2s 20s ease-in-out forwards;
+}
+
+.funfood {
+  width: 35%;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  bottom: 4%;
+  left: 0;
+  transform: translateX(200%);
+  animation: firstMotion .5s 18.5s ease-in forwards;
+}
+/* funfood hat styling ends here */
+
+/* keyframe animation starts here */
+@keyframes firstMotion {
+  to { transform: translateX(0%); }
+}
+
+@keyframes backOne {
+  to { transform:  translateX(-200%); }
+}
+
+@keyframes backTwo {
+  to { transform:  translateX(100%); }
+}
+
+@keyframes knifeIn {
+  to {
+    left: 40%;
+    opacity: 1;
+  }
+}
+
+@keyframes knifeOut {
+  to { opacity: 0; }
+}
+
+@keyframes topBreadUp {
+  to { top: -50px; }
+}
+
+@keyframes topBreadDown {
+  to { top: 0; }
+}
+
+@keyframes mayo {
+  to { opacity: 1; }
+}
+
+@keyframes topBreadDown {
+  to { top: -15px; }
+}
+
+@keyframes hatDown {
+  to {
+    bottom: 28%;
+    transform: rotate(-5deg) translateX(0%);
+  }
+}
+
+@keyframes link {
+  to { transform: translate(0%, 0%); }
+}
+/* keyframe styling ends here */
+
+<<<<<<< HEAD
+}
+=======
 /*=================================
   main styling ends here
 =================================*/
-
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
-
-/*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
-}
+>>>>>>> feature-css
