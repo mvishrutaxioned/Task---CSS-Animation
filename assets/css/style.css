@@ -132,6 +132,48 @@ main { width: 100%; }
   margin: 20px auto;
 }
 
+/* title styling starts here */
+.titles {
+  margin: 10% auto;
+  position: relative;
+}
+
+.title-one, .title-two, .title-three, .title-four {
+  width: 50%;
+  margin: 0 auto;
+  position: absolute;
+  color: #ED1C24;
+  font-size: 32px;
+  transform: translateX(-200%);
+}
+
+.title-one {
+  right: 0%;
+  left: 0%;
+  animation: firstMotion .5s 2s ease-in-out forwards, backOne .5s 5.5s ease-in-out forwards;
+}
+
+.title-two {
+  right: 0%;
+  left: 0%;
+  animation: firstMotion .5s 10s ease-in-out forwards, backOne .5s 13s ease-in-out forwards;
+}
+
+.title-three {
+  width: 50%;
+  right: 0%;
+  left: 0%;
+  animation: firstMotion .5s 14.5s ease-in-out forwards, backOne .5s 18s ease-in-out forwards;
+}
+
+.title-four {
+  width: 60%;
+  right: 0%;
+  left: 0%;
+  animation: firstMotion .5s 18.5s ease-in-out forwards;
+}
+/* title styling ends here */
+
 /*=================================
   main styling ends here
 =================================*/
